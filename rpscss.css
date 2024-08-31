@@ -1,0 +1,53 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Add a gradient background */
+    background: linear-gradient(to bottom, #f0f0f0, #ccc);
+    background-size: 100% 100vh;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Move the background behind the game container */
+}
+
+.game-container {
+    position: relative; /* Make the game container relative to position it on top of the background */
+    z-index: 1; /* Bring the game container to the front */
+    margin: 40px auto;
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
